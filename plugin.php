@@ -14,7 +14,7 @@ if (!defined('YOURLS_ABSPATH'))
     die();
 error_reporting(E_ALL);
 
-yourls_add_filter('shunt_get_keyword_info', 'vmfds_prefix_get_keyword_info');
+yourls_add_filter('shunt_get_keyword_info', 'vmfds_yourls_prefix_get_keyword_info');
 
 /**
  * Check if this is a short url for a series
@@ -24,12 +24,12 @@ yourls_add_filter('shunt_get_keyword_info', 'vmfds_prefix_get_keyword_info');
  * @param string $notfound Filter
  * @return string Url or previous value
  */
-function vmfds_prefix_get_keyword_info($existingValue, $keyword, $field, $notfound)
+function vmfds_yourls_prefix_get_keyword_info($existingValue, $keyword, $field, $notfound)
 {
     // Important! Safeguard existing value
     $result = $existingValue;
 
-    $configurationFile = YOURLS_ABSPATH.'/user/plugins/vmfds-prefix/plugin.yaml';
+    $configurationFile = YOURLS_ABSPATH.'/user/plugins/vmfds-yourls-prefix/plugin.yaml';
     if (file_exists($configurationFile)) 
         $configuration = yaml_parse_file($configurationFile);
     
