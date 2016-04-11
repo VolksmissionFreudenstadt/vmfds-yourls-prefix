@@ -1,0 +1,11 @@
+prefixes:
+    - prefix: "reihe-"
+      url: http://www.wortzummontag.de/predigtreihe/%s.html
+    - prefix: "p"
+      url: http://www.wortzummontag.de/index.php?id=400&tx_vmfdssermons_sermons[action]=byDate&no_cache=1&tx_vmfdssermons_sermons[date]=20%s-%s-%s
+      subparts:
+          0: 2
+          2: 2
+          4: 2
+    - prefix: "v"
+      url: 'https://www.volksmission-freudenstadt.de/live/veranstaltungen/details-zur-veranstaltung/?tx_koolvmfdstermine_pi1[id]=%s&tx_koolvmfdstermine_pi1[backLink]=110'
