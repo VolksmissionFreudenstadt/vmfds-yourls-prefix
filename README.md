@@ -11,6 +11,7 @@ All configuration takes place in the plugin.yaml file.
 
 ## Processing
 Processing will take part in four stages:
+
 1. The url keyword will be passed through a number of definable text replacements. These can be found in the `replacements` section in plugin.yaml. Each element in the list there takes two configurations: `find` and `replace`.
 2. The correct configuration will be determined by matching the start of the url keyword to one of the `prefix` definitions under `prefixes` in plugin.yaml. The prefix will then be cut off from the keyword.
 3. The rest of the keyword will be processed according to the further configuration for this prefix:
@@ -22,4 +23,4 @@ Processing will take part in four stages:
 Have a look at the enclosed plugin.yaml for some examples.
 
 ## Author
-Christoph Fischer (chris@toph.de) for Volksmission Freudenstadt (http://www.volksmission-freudenstadt.de)
+Christoph Fischer (@potofcoffee, chris@toph.de) for Volksmission Freudenstadt (@VolksmissionFreudenstadt, http://www.volksmission-freudenstadt.de)

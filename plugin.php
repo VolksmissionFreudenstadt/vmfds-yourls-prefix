@@ -2,11 +2,11 @@
 
 /*
   Plugin Name: Prefix replacement
-  Plugin URI: http://open.vmfds.de/
+  Plugin URI: https://github.com/VolksmissionFreudenstadt/vmfds-yourls-prefix
   Description: Replace and expand prefixed urls
   Version: 0.1
   Author: Christoph Fischer <christoph.fischer@volksmission.de>
-  Author URI: http://www.chris.toph.de/
+  Author URI: http://open.vmfds.de
  */
 
 // No direct call
