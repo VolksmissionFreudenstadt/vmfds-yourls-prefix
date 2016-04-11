@@ -28,8 +28,8 @@ function vmfds_yourls_prefix_get_keyword_info($existingValue, $keyword, $field, 
 {
     // Important! Safeguard existing value
     $result = $existingValue;
-
-    $configurationFile = YOURLS_ABSPATH.'/user/plugins/vmfds-yourls-prefix/plugin.yaml';
+    
+    $configurationFile = pathinfo(__FILE__, PATHINFO_DIRNAME).'/plugin.yaml';
     if (file_exists($configurationFile)) 
         $configuration = yaml_parse_file($configurationFile);
     
